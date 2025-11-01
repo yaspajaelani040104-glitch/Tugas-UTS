@@ -1,0 +1,202 @@
+/* ======= RESET DAN DASAR ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ======= NAVBAR ======= */
+header {
+  background-color: #b30000;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a:hover {
+  color: #ffdddd;
+  transition: 0.3s;
+}
+
+/* ======= HERO SECTION ======= */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(179, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+              url('IMG1.png')
+              center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* ======= SECTION ======= */
+section {
+  padding: 80px 10%;
+}
+
+h2.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #b30000;
+  position: relative;
+}
+
+h2.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #b30000;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ======= TENTANG ======= */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+/* ======= SKILL ======= */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.skill-box {
+  background: #fff5f5;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  background-color: #ffe5e5;
+}
+
+.skill-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* ======= HOBI ======= */
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobby {
+  background: #fff5f5;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.hobby img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hobby:hover {
+  transform: scale(1.05);
+}
+
+/* ======= KONTAK ======= */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+footer {
+  background: #b30000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media(max-width:768px) {
+  header h1 { font-size: 20px; }
+  .hero h2 { font-size: 36px; }
+  section { padding: 60px 5%; }
+}
